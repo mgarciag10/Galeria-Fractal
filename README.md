@@ -1,4 +1,4 @@
-# **Geometría Fractal **
+# Geometría Fractal
 
 ## Introducción 
 
