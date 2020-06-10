@@ -14,12 +14,343 @@ Analizando esta construcción, podemos resumir las principales propiedades que e
 Algunos ejemplos de fractales son:
 ### Conjuntos de Newton
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return z**3-(z-1)**2-1
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*50
+            g=i*20
+            b=i*30
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Segundo Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%202.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return z**5+z**4-z**3+z**2-z+10
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*10
+            g=i*11
+            b=i*20
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Tercer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%203.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return (z**2-4)*(z**3-10)+2
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*10
+            g=i*20
+            b=i*11
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Cuarto Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return -z**5+z**3-z+4
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*21
+            g=i*20
+            b=i*10
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 
 ### Conjuntos de Julia
 ![Primer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%201.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-2
+xb=2
+ya=-2
+yb=2
+maxit=30
+
+def f(z):
+    return z**4-complex(0.5,0.5)
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            z0=f(z)
+            if abs(z)>1000:
+                break
+            z=z0
+            r=i*15
+            g=i*20
+            b=i*18
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Segundo Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%202.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-2
+xb=2
+ya=-2
+yb=2
+maxit=30
+
+def f(z):
+    return z**5-1+complex(0.7,0.7)
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            z0=f(z)
+            if abs(z)>1000:
+                break
+            z=z0
+            r=i*20
+            g=i*15
+            b=i*20
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Tercer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%203.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-2
+xb=2
+ya=-2
+yb=2
+maxit=30
+
+def f(z):
+    return np.cos(z)+20+complex(1,1)
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            z0=f(z)
+            if abs(z)>1000:
+                break
+            z=z0
+            r=i*10
+            g=i*11
+            b=i*20
+            image.putpixel((x,y),(r,g,b))
+image
+```
+
 ![Cuarto Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%204.png)
+#### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+
+imgx=600
+imgy=600
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+
+xa=-2
+xb=2
+ya=-2
+yb=2
+maxit=30
+
+def f(z):
+    return np.sin(z)+12+complex(0.3,0.3)
+
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            z0=f(z)
+            if abs(z)>1000:
+                break
+            z=z0
+            r=i*50
+            g=i*20
+            b=i*30
+            image.putpixel((x,y),(r,g,b))
+image
+```
