@@ -21,7 +21,7 @@ Algunos ejemplos de fractales son:
 
 #### Primer Fractal
 ##### Función
-z^{3}-(z-1)^{2}-1
+$z^{3}-(z-1)^{2}-1$
 
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
 ##### Algoritmo de creación 
