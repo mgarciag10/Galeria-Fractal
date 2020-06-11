@@ -21,7 +21,7 @@ Algunos ejemplos de fractales son:
 
 #### Primer Fractal
 ##### Función
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;F(z)=z^{3}-(z-1)^{2}-1" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{3}-(z-1)^{2}-1" />
 
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
 ##### Algoritmo de creación 
@@ -68,6 +68,9 @@ image
 ```
 
 #### Segundo Fractal
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{5}+z^{4}-z^{3}+z^{2}-z+10" />
+
 ![Segundo Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%202.png)
 ##### Algoritmo de creación 
 ```
@@ -114,6 +117,9 @@ image
 
 #### Tercer Fractal
 ![Tercer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%203.png)
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=(z^{2}-4)(z^{3]-10)+2" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
@@ -159,6 +165,9 @@ image
 
 #### Cuarto Fractal
 ![Cuarto Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton.png)
+##### Función 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=-z^{5}+z^{3}-z+4" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
@@ -207,6 +216,9 @@ image
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%201.png)
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{4}" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
