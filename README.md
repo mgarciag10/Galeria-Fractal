@@ -563,3 +563,13 @@ copoVonKoch(2, 4)
 ### El triángulo de Sierpinski
 Este conjunto fue introducido por Waclaw Sierpinski unos 40 años después que el conjunto de Cantor, como ejemplo de una curva en la que todo punto es de ramificación. La construcción geométrica del triángulo de Sierpinski es la siguiente. Se parte de un triángulo equilátero <img src="https://latex.codecogs.com/svg.latex?\Large&space;T" />. A este triángulo se le quita el triángulo (sin bordes) que resulta de unir los puntos medios de sus lados.
  
+![1](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/1..JPG)
+
+En este primer paso tenemos tres nuevos triángulos <img src="https://latex.codecogs.com/svg.latex?\Large&space;T_1" />T1, T2 y T3.
+
+![2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/2..JPG)
+![3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3..JPG)
+![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
+![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
+![Iterado 3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/iteracion%203.png)
+![Iterado 4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/iterada%204.png)
