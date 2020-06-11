@@ -684,3 +684,60 @@ plt.scatter(x, y, s = 0.2, edgecolor ='yellow')
 plt.axis("equal")
 plt.show()   
 ```
+
+### Fractales en el mundo real
+
+Los fractales que vimos hasta aquí viven en el mundo idealizado de las Matemáticas, donde es teóricamente posible repetir cada paso de construcción en forma indefinida, o ver un objeto a escalas arbitrariamente pequeñas. Por supuesto, el mundo real no es así, en la realidad, solo encontramos fractales aproximados. Si nos acercamos demasiado a un objeto real, se perderá cualquier auto-similitud, y eventualmente nos encontraremos con una estructura molecular o atómica. Sin embargo, puede ser muy útil considerar los objetos naturales como fractales si exhiben irregularidades o auto-similitudes cuando se ven en un rango significativo de escalas.
+
+Algunos casos de fractales que podemos encontrar en la Madre Naturaleza son:
+
+- **Costas y paisajes:** Las formas geográficas, como las costas, los paisajes y los causes de los ríos muestran muchas características fractales.
+- **Nubes:** La forma de las nubes es complicada e irragular, tomando muchas de las características de los fractales.
+- **El brócoli romanesco:** Su estructura general está compuesta por una serie de conos repetidos a escalas cada vez más pequeñas.
+- **Ramas de los árboles:** Las ramas de los árboles crecen y se bifurcan siguiendo un patrón de autosimilitud como el de los fractales.
+
+A continuación veremos un ejemplo:
+
+#### Fractal 3D
+![3D]()
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=e^{-|z|}" />
+
+##### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.figure as fg
+from matplotlib import cm 
+import numpy as np 
+
+fig = plt.figure() 
+ax = fig.add_subplot(111, projection='3d')
+ax.view_init(azim=-130,elev=45) 
+ax.dist = 4.3 
+ax.set_facecolor([.50,.55,.45])
+
+n = 8 
+dx = 0.0 
+dy = 0.0 
+L = 1.0
+M = 300 
+
+def f(Z):
+    return np.e**(-np.abs(Z))
+
+x = np.linspace(-L+dx,L+dx,M) 
+y = np.linspace(-L+dy,L+dy,M) 
+X,Y = np.meshgrid(x,y) 
+Z = X + 1j*Y 
+for k in range(1,n+1):
+    ZZ = Z - (Z**4 + 1)/(4*Z**3)
+    Z = ZZ
+    W = f(Z)
+    ax.set_xlim(dx-L,dx+L) 
+    ax.set_zlim(dy-L,dy+L) 
+    ax.set_zlim(-2.5*L,2*L) 
+    ax.axis("off") 
+    ax.plot_surface(X, Y, -W, rstride=1, cstride=1, cmap="terrain") 
+    plt.show()
+```
