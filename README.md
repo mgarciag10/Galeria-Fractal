@@ -565,11 +565,122 @@ Este conjunto fue introducido por Waclaw Sierpinski unos 40 años después que e
  
 ![1](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/1..JPG)
 
-En este primer paso tenemos tres nuevos triángulos <img src="https://latex.codecogs.com/svg.latex?\Large&space;T_1" />T1, T2 y T3.
+En este primer paso tenemos tres nuevos triángulos <img src="https://latex.codecogs.com/svg.latex?\Large&space;T_1" />, <img src="https://latex.codecogs.com/svg.latex?\Large&space;T_2" /> y <img src="https://latex.codecogs.com/svg.latex?\Large&space;T_3" />.
 
 ![2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/2..JPG)
+
+A cada uno de ellos le aplicamos el proceso anterior.
+
 ![3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3..JPG)
+
+Así sucesivamente, tenemos 3, 9, 27, 81, ... triángulos, cada uno de ellos una copia a escala 1/2 de los triángulos de la etapa anterior.
+
+El triángulo de Sierpinski <img src="https://latex.codecogs.com/svg.latex?\Large&space;T" /> es el conjunto de puntos que quedan después de aplicar este proceso infinitas veces. 
+
+Hay que observar que el triángulo de Sierpinski se descompone en tres partes, correspondientes a los tres triángulos de la primera etapa de su construcción, semejantes al conjunto total a escala 1/2.
+
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
+
+Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1}(T) ∪ f_{2}(T) ∪ f_{3}(T)" />.
+
+Esta propiedad, que es bastante general entre los conjuntos fractales, se denomina autosemejanza y nos permite calcular la dimensión de Hausdorff del Triángulo de Sierpinski que es s = log(3)/log(2) = 1.584962.
+
 ![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
+
+A continuación veremos algunos ejemplos:
+
+#### Primer Fractal
 ![Iterado 3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/iteracion%203.png)
+
+##### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.figure as fg
+from matplotlib import cm 
+from math import sin, cos, pi, atan2
+from pylab import * 
+from random import randint 
+
+def transafin(M,t,x):
+    y=M@x+t
+    return y
+
+Tri=np.array([[0,0],[1,0],[0,1],[0,0]])
+
+transafin([[0.5,0],[0,0.5]],[0,0],Tri[1])
+
+fig=plt.figure()
+ax=plt.gca()
+Tri=np.array([[0,0]])
+for i in range(8):
+    tritrans=np.array([transafin([[0.5,0],[0,0.5]],[0,0],i) for i in Tri])
+    tritrans2=np.array([transafin([[0.5,0],[0,0.5]],[0,0.5],i) for i in Tri])
+    tritrans3=np.array([transafin([[0.5,0],[0,0.5]],[0.5,0],i) for i in Tri])
+    Tri=np.concatenate((tritrans,tritrans2,tritrans3))
+plt.scatter(Tri.transpose()[0],Tri.transpose()[1],color='purple',s=0.2)
+ax.set_xticks(np.arange(-0.2,1.4,0.2))
+ax.set_yticks(np.arange(-0.2,1.4,0.2))
+plt.grid()
+ax.axis("equal")
+```
+
+Variando los puntos a los que nos podemos acercar en cada iteración, la distancia a la que nos acercamos (no necesariamente 1/2) y la probabilidad asignada para elegir el vértice, se obtienen diferentesfractales como el helecho de Barnsley que se muestra en la figura.
+
+#### Segundo Fractal
 ![Iterado 4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/iterada%204.png)
+
+##### Algoritmo de creación 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as spp
+from ipywidgets import interact, interactive, fixed, interact_manual, widgets
+from sympy.parsing.sympy_parser import parse_expr
+from PIL import Image
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.figure as fg
+from matplotlib import cm 
+from math import sin, cos, pi, atan2
+from pylab import * 
+from random import randint 
+
+x = [] 
+y = [] 
+   
+x.append(0) 
+y.append(0) 
+  
+current = 0
+  
+for i in range(1, 50000): 
+  
+    z = randint(1, 100) 
+    
+    if z == 1: 
+        x.append(0) 
+        y.append(0.16*(y[current])) 
+        
+    if z>= 2 and z<= 86: 
+        x.append(0.90*(x[current]) + 0.04*(y[current])) 
+        y.append(-0.04*(x[current]) + 0.80*(y[current])+1.6) 
+      
+    if z>= 87 and z<= 93: 
+        x.append(0.2*(x[current]) - 0.26*(y[current])) 
+        y.append(0.23*(x[current]) + 0.22*(y[current])+1.6) 
+      
+    if z>= 94 and z<= 100: 
+        x.append(-0.15*(x[current]) + 0.28*(y[current])) 
+        y.append(0.20*(x[current]) + 0.10*(y[current])+0.44) 
+          
+    current = current + 1
+   
+plt.scatter(x, y, s = 0.2, edgecolor ='yellow') 
+plt.axis("equal")
+plt.show()   
+```
