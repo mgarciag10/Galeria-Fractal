@@ -699,7 +699,7 @@ Algunos casos de fractales que podemos encontrar en la Madre Naturaleza son:
 A continuación veremos un ejemplo:
 
 #### Fractal 3D
-![3D]()
+![3D](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3D.png)
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=e^{-|z|}" />
 
