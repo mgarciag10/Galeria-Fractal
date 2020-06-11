@@ -647,7 +647,7 @@ plt.grid()
 ax.axis("equal")
 ```
 
-Variando los puntos a los que nos podemos acercar en cada iteración, la distancia a la que nos acercamos (no necesariamente 1/2) y la probabilidad asignada para elegir el vértice, se obtienen diferentesfractales como el helecho de Barnsley que se muestra en la figura.
+Variando los puntos a los que nos podemos acercar en cada iteración, la distancia a la que nos acercamos (no necesariamente <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=1/2" />) y la probabilidad asignada para elegir el vértice, se obtienen diferentesfractales como el helecho de Barnsley que se muestra en la figura.
 
 #### Segundo Fractal
 ![Iterado 4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/iterada%204.png)
