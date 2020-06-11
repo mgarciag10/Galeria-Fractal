@@ -450,11 +450,11 @@ A continuación, pasamos a describir su construcción:
 
 ![1](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/1.JPG)
 
-2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{1}{3}" />. por dos segmentos de la misma longitud formando un ángulo de <img src="https://latex.codecogs.com/svg.latex?\Large&space;60" /> grados.
+2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;1/3" />. por dos segmentos de la misma longitud formando un ángulo de <img src="https://latex.codecogs.com/svg.latex?\Large&space;60" /> grados.
 
 ![2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/2.JPG)
 
-3. En cada uno de los 4 intervalos que se han formado, repetimos la operación.
+3. En cada uno de los <img src="https://latex.codecogs.com/svg.latex?\Large&space;4" /> intervalos que se han formado, repetimos la operación.
 
 ![3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3.JPG)
 
@@ -462,7 +462,7 @@ A continuación, pasamos a describir su construcción:
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4.JPG)
 
-La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=log(4)/log(3)=1.26185" />, ya que es autosemejante con cuatro partes semejantes al total, a escala de un 1/3.
+La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=log(4)/log(3)=1.26185" />, ya que es autosemejante con cuatro partes semejantes al total, a escala de un <img src="https://latex.codecogs.com/svg.latex?\Large&space;1/3" />.
 
 A continuación veremos algunos ejemplos:
 
@@ -585,19 +585,19 @@ A cada uno de ellos le aplicamos el proceso anterior.
 
 ![3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3..JPG)
 
-Así sucesivamente, tenemos 3, 9, 27, 81, ... triángulos, cada uno de ellos una copia a escala 1/2 de los triángulos de la etapa anterior.
+Así sucesivamente, tenemos <img src="https://latex.codecogs.com/svg.latex?\Large&space;3, 9, 27, 81, ..." /> triángulos, cada uno de ellos una copia a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;1/2" /> de los triángulos de la etapa anterior.
 
 El triángulo de Sierpinski <img src="https://latex.codecogs.com/svg.latex?\Large&space;T" /> es el conjunto de puntos que quedan después de aplicar este proceso infinitas veces. 
 
-Hay que observar que el triángulo de Sierpinski se descompone en tres partes, correspondientes a los tres triángulos de la primera etapa de su construcción, semejantes al conjunto total a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frad{1}{2}" />.
+Hay que observar que el triángulo de Sierpinski se descompone en tres partes, correspondientes a los tres triángulos de la primera etapa de su construcción, semejantes al conjunto total a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;\1/2" />.
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
 
-Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1} (T)  f_{2} (T)  f_{3} (T)" />.
+Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1} (T) /cup  f_{2} (T) /cup  f_{3} (T)" />.
 
 ![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
 
-Esta propiedad, que es bastante general entre los conjuntos fractales, se denomina autosemejanza y nos permite calcular la dimensión de Hausdorff del Triángulo de Sierpinski que es s = log(3)/log(2) = 1.584962.
+Esta propiedad, que es bastante general entre los conjuntos fractales, se denomina autosemejanza y nos permite calcular la dimensión de Hausdorff del Triángulo de Sierpinski que es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=log(3)/log(4)=1.584962" />.
 
 A continuación veremos algunos ejemplos:
 
@@ -712,6 +712,7 @@ A continuación veremos un ejemplo:
 
 #### Fractal 3D
 ![3D](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3D.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=e^{-|z|}" />
 
