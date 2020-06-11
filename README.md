@@ -577,11 +577,11 @@ Así sucesivamente, tenemos 3, 9, 27, 81, ... triángulos, cada uno de ellos una
 
 El triángulo de Sierpinski <img src="https://latex.codecogs.com/svg.latex?\Large&space;T" /> es el conjunto de puntos que quedan después de aplicar este proceso infinitas veces. 
 
-Hay que observar que el triángulo de Sierpinski se descompone en tres partes, correspondientes a los tres triángulos de la primera etapa de su construcción, semejantes al conjunto total a escala 1/2.
+Hay que observar que el triángulo de Sierpinski se descompone en tres partes, correspondientes a los tres triángulos de la primera etapa de su construcción, semejantes al conjunto total a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frad{1}{2}" />.
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
 
-Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1}(T)  f_{2}(T)  f_{3}(T)" />.
+Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1} (T)  f_{2} (T)  f_{3} (T)" />.
 
 ![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
 
