@@ -35,7 +35,7 @@ La idea de este método es la siguiente: se comienza con un valor razonablemente
 
 Además es responsabilidad nuestra la elección de un buen test de parada, aunque dicho test podría basarse simplemente en el número de iteraciones realizadas.
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}" />
 
 Partiendo de este método, y dado que es capaz de aproximarse tanto a soluciones reales como a complejas, podríamos ingeniárnoslas para que dada una función se coloreasen de forma distinta las soluciones a las que el algoritmo va convergiendo. En pocas palabras: seleccionamos una región del plano complejo y vamos ejecutando el método de Newton, para una función <img src="https://latex.codecogs.com/svg.latex?\Large&space;f" /> dada, en un punto elegido de la región. Dependiendo de a qué solución converge el método pintamos ese punto de un color u otro.
 
@@ -239,7 +239,7 @@ image
 ### Conjuntos de Julia
 Podemos definir el conjunto de Julia de un polinomio de variable compleja como la frontera del conjunto de puntos que escapan al infinito al iterar dicho polinomio. Esto significa que la órbita de un elemento del conjunto de Julia no escapa al infinito, pero existen puntos arbitrariamente cerca de él que sí lo hacen. 
 
-Julia probó que la órbita de z = 0 juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de z = 0 diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a 2.
+Julia probó que la órbita de <img src="https://latex.codecogs.com/svg.latex?\Large&space;z=0" /> juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de <img src="https://latex.codecogs.com/svg.latex?\Large&space;z=0" /> diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a <img src="https://latex.codecogs.com/svg.latex?\Large&space;2" />.
 
 A continuación veremos algunos ejemplos: 
 
@@ -436,9 +436,9 @@ La curva de Koch fue introducida por Helge von Koch en 1904. Este monstruo matem
 A continuación, pasamos a describir su construcción: 
 1. Consideramos un segmento de recta, de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;n" />.
 
-2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;\dfrac{1}{3}" />. por dos segmentos de la misma longitud formando un ángulo de 60 grados.
+2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{1}{3}" />. por dos segmentos de la misma longitud formando un ángulo de 60 grados.
 3. En cada uno de los 4 intervalos que se han formado, repetimos la operación.
 4. Así sucesivamente. La curva de Koch es el límite de este proceso innfinito.
-La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=\dfrac{log(4)}{log(3)}=1,26185" />, ya que es autosemejante con cuatro partes semejantes altotal, a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;\dfrac{1}{3}" />
+La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=\frac{log(4)}{log(3)}=1,26185" />, ya que es autosemejante con cuatro partes semejantes altotal, a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;\dfrac{1}{3}" />
 .
 
