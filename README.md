@@ -435,15 +435,19 @@ La curva de Koch fue introducida por Helge von Koch en 1904. Este monstruo matem
 
 A continuación, pasamos a describir su construcción: 
 1. Consideramos un segmento de recta, de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;n" />.
+
 ![1](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/1.JPG)
 
 2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;1/3" />. por dos segmentos de la misma longitud formando un ángulo de <img src="https://latex.codecogs.com/svg.latex?\Large&space;60" /> grados.
+
 ![2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/2.JPG)
 
 3. En cada uno de los 4 intervalos que se han formado, repetimos la operación.
+
 ![3](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/3.JPG)
 
 4. Así sucesivamente. La curva de Koch es el límite de este proceso innfinito.
+
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4.JPG)
 
 La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=log(4)/log(3)=1,26185" />, ya que es autosemejante con cuatro partes semejantes altotal, a escala <img src="https://latex.codecogs.com/svg.latex?\Large&space;1/3" />
