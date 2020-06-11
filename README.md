@@ -45,6 +45,7 @@ Para los ejemplos que se verán en las simulaciones se han dibujado los fractale
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{3}-(z-1)^{2}-1" />
 
@@ -93,6 +94,7 @@ image
 
 #### Segundo Fractal
 ![Segundo Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%202.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{5}+z^{4}-z^{3}+z^{2}-z+10" />
 
@@ -141,6 +143,7 @@ image
 
 #### Tercer Fractal
 ![Tercer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%203.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=(z^{2}-4)(z^{3}-10)+2" />
 
@@ -189,6 +192,7 @@ image
 
 #### Cuarto Fractal
 ![Cuarto Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton.png)
+
 ##### Función 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=-z^{5}+z^{3}-z+4" />
 
@@ -239,12 +243,13 @@ image
 ### Conjuntos de Julia
 Podemos definir el conjunto de Julia de un polinomio de variable compleja como la frontera del conjunto de puntos que escapan al infinito al iterar dicho polinomio. Esto significa que la órbita de un elemento del conjunto de Julia no escapa al infinito, pero existen puntos arbitrariamente cerca de él que sí lo hacen. 
 
-Julia probó que la órbita de $'z=0'$ juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de z = 0 diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a 2.
+Julia probó que la órbita de <img src="https://latex.codecogs.com/svg.latex?\Large&space;z=0" /> juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de <img src="https://latex.codecogs.com/svg.latex?\Large&space;z=0" /> diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a <img src="https://latex.codecogs.com/svg.latex?\Large&space;2" />.
 
 A continuación veremos algunos ejemplos: 
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%201.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{4}+c" />
 
@@ -292,8 +297,10 @@ image
 
 #### Segundo Fractal
 ![Segundo Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%202.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{5}-1+c" />
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(0,7+0,7i)" />
 
 ##### Algoritmo de creación 
@@ -338,8 +345,10 @@ image
 
 #### Tercer Fractal
 ![Tercer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%203.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=cos(z)+20+c" />
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(1+i)" />
 
 ##### Algoritmo de creación 
@@ -384,8 +393,10 @@ image
 
 #### Cuarto Fractal
 ![Cuarto Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%204.png)
+
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=sen(z)+12+c" />
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(0,3+0,3i)" />
 
 ##### Algoritmo de creación 
@@ -435,11 +446,11 @@ La curva de Koch fue introducida por Helge von Koch en 1904. Este monstruo matem
 - En relación al copo de nieve de Koch, comprobaremos como una curva de longitud (perímetro) infinita encierra un área finita.
 
 A continuación, pasamos a describir su construcción: 
-1. Consideramos un segmento de recta, de longitud n.
+1. Consideramos un segmento de recta, de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;n" />.
 
 ![1](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/1.JPG)
 
-2. Reemplazamos el intervalo central de longitud 1/3. por dos segmentos de la misma longitud formando un ángulo de 60 grados.
+2. Reemplazamos el intervalo central de longitud <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{1}{3}" />. por dos segmentos de la misma longitud formando un ángulo de <img src="https://latex.codecogs.com/svg.latex?\Large&space;60" /> grados.
 
 ![2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/2.JPG)
 
@@ -451,7 +462,7 @@ A continuación, pasamos a describir su construcción:
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4.JPG)
 
-La dimensión de Hausdorff de la curva de Koch es s = log(4)/log(3) = 1.26185, ya que es autosemejante con cuatro partes semejantes al total, a escala de un 1/3.
+La dimensión de Hausdorff de la curva de Koch es <img src="https://latex.codecogs.com/svg.latex?\Large&space;s=log(4)/log(3)=1.26185" />, ya que es autosemejante con cuatro partes semejantes al total, a escala de un 1/3.
 
 A continuación veremos algunos ejemplos:
 
