@@ -450,8 +450,8 @@ A continuación, pasamos a describir su construcción:
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4.JPG)
 
-La dimensión de Hausdorff de la curva de Koch es s = log(4)/log(3) = 1.26185, ya que es autosemejante con cuatro partes semejantes altotal, a escala 1/3.
-.
+La dimensión de Hausdorff de la curva de Koch es s = log(4)/log(3) = 1.26185, ya que es autosemejante con cuatro partes semejantes al total, a escala de un 1/3.
+
 A continuación veremos algunos ejemplos:
 
 #### Primer Fractal
@@ -459,6 +459,15 @@ A continuación veremos algunos ejemplos:
 
 ##### Algoritmo de creación 
 ```
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.figure as fg
+from matplotlib import cm 
+import numpy as np 
+from PIL import Image
+from math import sin, cos, pi, atan2
+from pylab import *
+
 def copoVonKoch(lado, n):
     x_vertice1 = 0
     y_vertice1 = 0
@@ -503,6 +512,15 @@ curvaVonKoch(-1, 2, 1, 1, 5)
 
 ##### Algoritmo de creación 
 ```
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.figure as fg
+from matplotlib import cm 
+import numpy as np 
+from PIL import Image
+from math import sin, cos, pi, atan2
+from pylab import *
+
 def copoVonKoch(lado, n):
     x_vertice1 = 0
     y_vertice1 = 0
@@ -539,5 +557,7 @@ def curvaVonKoch(xi, yi, xf, yf, n):
         curvaVonKoch(x2, y2, x3, y3, n - 1)
         curvaVonKoch(x3, y3, xf, yf, n - 1)
     return
-curvaVonKoch(2, 4)
+copoVonKoch(2, 4)
 ```
+
+### 
