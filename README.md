@@ -142,7 +142,7 @@ image
 #### Tercer Fractal
 ![Tercer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%203.png)
 ##### Función
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=(z^{2}-4)(z^{3]-10)+2" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=(z^{2}-4)(z^{3}-10)+2" />
 
 ##### Algoritmo de creación 
 ```
@@ -237,11 +237,17 @@ image
 
 
 ### Conjuntos de Julia
+Podemos definir el conjunto de Julia de un polinomio de variable compleja como la frontera del conjunto de puntos que escapan al infinito al iterar dicho polinomio. Esto significa que la órbita de un elemento del conjunto de Julia no escapa al infinito, pero existen puntos arbitrariamente cerca de él que sí lo hacen. 
+
+Julia probó que la órbita de z = 0 juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de z = 0 diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a 2.
+
+A continuación veremos algunos ejemplos: 
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%201.png)
 ##### Función
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{4}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{4}+c" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(-0,5-0,5i)" />
 
 ##### Algoritmo de creación 
 ```
@@ -285,6 +291,10 @@ image
 
 #### Segundo Fractal
 ![Segundo Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%202.png)
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{5}-1+c" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(0,7+0,7i)" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
@@ -327,6 +337,10 @@ image
 
 #### Tercer Fractal
 ![Tercer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%203.png)
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=cos(z)+20+c" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(1+i)" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
@@ -369,6 +383,10 @@ image
 
 #### Cuarto Fractal
 ![Cuarto Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%204.png)
+##### Función
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=sen(z)+12+c" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(0,3+0,3i)" />
+
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
