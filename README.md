@@ -507,7 +507,7 @@ def curvaVonKoch(xi, yi, xf, yf, n):
 curvaVonKoch(-1, 2, 1, 1, 5)
 ```
 
-#### Primer Fractal
+#### Segundo Fractal
 ![Iterado 2](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/Ite.png)
 
 ##### Algoritmo de creación 
@@ -560,4 +560,6 @@ def curvaVonKoch(xi, yi, xf, yf, n):
 copoVonKoch(2, 4)
 ```
 
-### 
+### El triángulo de Sierpinski
+Este conjunto fue introducido por Waclaw Sierpinski unos 40 años después que el conjunto de Cantor, como ejemplo de una curva en la que todo punto es de ramificación. La construcción geométrica del triángulo de Sierpinski es la siguiente. Se parte de un triángulo equilátero <img src="https://latex.codecogs.com/svg.latex?\Large&space;T" />. A este triángulo se le quita el triángulo (sin bordes) que resulta de unir los puntos medios de sus lados.
+ 
