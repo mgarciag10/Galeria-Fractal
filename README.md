@@ -18,16 +18,12 @@ Analizando esta construcción, podemos resumir las principales propiedades que e
 Esta se establece a partir del origen de su formación:
 - **Lineales:** Se generan a partir de conceptos y algoritmos lineales, como por ejemplo rectas o triángulos. Pueden obtenerse mediante trazados geométricos simples.
 - **Complejos:** Se generan mediante un algoritmo de escape. Para cada punto se calculan una serie de valores mediante la repetición de una formula hasta que se cumple una condición, momento en el cual se asigna al punto un color relacionado con el número de repeticiones. 
-
 Los fractales de este tipo precisan de millones de operaciones, por lo cual sólo pueden dibujarse con la ayuda del ordenador.
 - **Órbitas caóticas:** Este tipo de modelo nació con un estudio sobre órbitas caóticas desarrollado por Edward  Lorenz en 1.963. El atractor de Lorenz tiene un comportamiento fractal, aunque los fractales no son sinónimos y tienen comportamientos distintos; solamente comparten una formulación sencilla.
-- ** Autómatas celulares:** Los autómatas celulares fueron utilizados por primera vez por los matemáticos John von Neumann y Stanislaw Ulam en 1948 para representar la reproducción en algunos sistemas biológicos.
-
+- **Autómatas celulares:** Los autómatas celulares fueron utilizados por primera vez por los matemáticos John von Neumann y Stanislaw Ulam en 1948 para representar la reproducción en algunos sistemas biológicos.
 Un autómata celular es un sistema dinámico discreto, (espacio y tiempo toman valores discretos), cuya función asociada toma un conjunto finito de valores. Funcionan con sencillas reglas que colorean zonas a partir del color de las adyacentes.
 - **Plasma:** Estructuras como el plasma o las imágenes de difusión dependen en cierta medida del azar, por lo cual son únicas e irrepetibles.
-
 Ello se debe a que no es un proceso determinista, sino totalmente aleatorio. Consiste en un patrón único e irrepetible de colores.
-
 
 ## Tipos de Fractales 
 Algunos ejemplos de fractales son:
