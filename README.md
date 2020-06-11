@@ -20,10 +20,10 @@ Algunos ejemplos de fractales son:
 ### Conjuntos de Newton
 
 #### Primer Fractal
+![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{3}-(z-1)^{2}-1" />
 
-![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
@@ -68,10 +68,10 @@ image
 ```
 
 #### Segundo Fractal
+![Segundo Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%202.png)
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{5}+z^{4}-z^{3}+z^{2}-z+10" />
 
-![Segundo Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%202.png)
 ##### Algoritmo de creación 
 ```
 import matplotlib.pyplot as plt
