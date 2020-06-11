@@ -581,11 +581,11 @@ Hay que observar que el triángulo de Sierpinski se descompone en tres partes, c
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
 
-Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1}(T) \cup f_{2}(T) \cup f_{3}(T)" />.
-
-Esta propiedad, que es bastante general entre los conjuntos fractales, se denomina autosemejanza y nos permite calcular la dimensión de Hausdorff del Triángulo de Sierpinski que es s = log(3)/log(2) = 1.584962.
+Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1}(T)  f_{2}(T)  f_{3}(T)" />.
 
 ![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
+
+Esta propiedad, que es bastante general entre los conjuntos fractales, se denomina autosemejanza y nos permite calcular la dimensión de Hausdorff del Triángulo de Sierpinski que es s = log(3)/log(2) = 1.584962.
 
 A continuación veremos algunos ejemplos:
 
