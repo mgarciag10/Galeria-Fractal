@@ -24,7 +24,7 @@ La idea de este método es la siguiente: se comienza con un valor razonablemente
 
 Además es responsabilidad nuestra la elección de un buen test de parada, aunque dicho test podría basarse simplemente en el número de iteraciones realizadas.
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space&center;x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}" />
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
