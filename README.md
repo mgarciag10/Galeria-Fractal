@@ -1,6 +1,11 @@
 # Geometría Fractal 
 
 ## Introducción
+Para muchas personas, la palabra Geometría evoca círculos, cuadrados, cubos y otros objetos regulares o lisos. En nuestra vida cotiana, vemos edificios, muebles o automóviles, que hacen un uso amplio de tales formas. Sin embargo, muchos fenómenos en la naturaleza y la ciencia son cualquier cosa menos regulares o suaves. Por ejemplo, un paisaje natural puede incluir arbustos, árboles, montañas y nubes, que son demasiado complejas para ser representadas por las formas geométricas clásicas.
+
+Sorprendentemente, los objetos aparentemente complejos e irregulares a menudo se pueden describir en términos notablemente simples. La Geometría fractal proporciona un marco en el que un proceso simple, que implica una operación básica repetida muchas veces, puede dar lugar a un resultado altamente irregular. Las construcciones fractales pueden representar objetos naturales pero también dan lugar a una gran variedad de otras formas, que pueden ser de extraordinaria complejidad.
+
+Lo que se busca con este documento es explicar la teoría que se encuentra detrás de un fractal y como estos los podemos representar en Python.
 
 ## ¿Qué es un fractal?
 Un fractal es un objeto cuya estructura se repite a diferentes escalas. Es decir, por mucho que nos acerquemos o alejemos del objeto, observaremos siempre la misma estructura. De hecho, somos incapaces de afirmar a qué distancia nos encontramos del objeto, ya que siempre lo veremos de la misma forma.
@@ -593,7 +598,7 @@ Hay que observar que el triángulo de Sierpinski se descompone en tres partes, c
 
 ![4](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/4..JPG)
 
-Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1} (T) /cup  f_{2} (T) /cup  f_{3} (T)" />.
+Es decir, si consideramos las tres homotecias de razón 1/2 centradas en cada uno de los vértices del triángulo, se tiene que <img src="https://latex.codecogs.com/svg.latex?\Large&space;T = f_{1} (T) U  f_{2} (T) U  f_{3} (T)" />.
 
 ![5](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/5..JPG)
 
