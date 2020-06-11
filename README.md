@@ -9,7 +9,7 @@ Un fractal es un objeto cuya estructura se repite a diferentes escalas. Es decir
 Analizando esta construcción, podemos resumir las principales propiedades que exhiben la mayoría de los fractales
 - **Estructura fina:** Al ampliar la curva, por mucho que la amplifiquemos, las irregularidades en su forma siempre son evidentes. Esta es una consecuencia directa de la construcción en la que los segmentos de línea muy pequeños se trataron de la misma manera que el original pero en una escala mucho menor.
 - **Auto-similitud:** La curva está compuesta de pequeñas copias de sí misma.
-- **Los métodos clásicos de geometría y matemáticas no son aplicables:** La figura es demasiado irregular para ser descrito en el lenguaje geométrico tradicional y, a diferencia de las formas clásicas, no puede expresarse mediante una fórmula "simple".
+- **Los métodos clásicos de geometría y matemáticas no son aplicables:** La figura es demasiado irregular para ser descrito en el lenguaje geométrico tradicional y, a diferencia de las formas clásicas, no puede expresarse mediante una fórmula simple.
 - **El tamaño depende de la escala a la que se mide:** A diferencia de figuras tradicionales como el círculo, dónde podemos tratar de medir la longitud tomando pequeños tramos y multiplicando por el número de pasos; tratar de medir la longitud de la curva de Koch dividiéndola en pasos cada vez más cortos solo proporciona estimaciones cada vez mayores para su longitud.
 - **Una construcción recursiva simple:** Si bien la curva parece un objeto complejo, en realidad se trata de una construcción recursiva que consiste en aplicar unos pasos simples una y otra vez.
 - **Una apariencia natural:** Con un poco de imaginación, la mayoría de los objetos fractales toman formas que recuerdan a la Naturaleza.
@@ -239,7 +239,7 @@ image
 ### Conjuntos de Julia
 Podemos definir el conjunto de Julia de un polinomio de variable compleja como la frontera del conjunto de puntos que escapan al infinito al iterar dicho polinomio. Esto significa que la órbita de un elemento del conjunto de Julia no escapa al infinito, pero existen puntos arbitrariamente cerca de él que sí lo hacen. 
 
-Julia probó que la órbita de z = 0 juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de z = 0 diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a 2.
+Julia probó que la órbita de \insertequation[Label (opcional)]{z=0} juega un papel esencial para saber si un conjunto de Julia es conexo. ¿Cuándo podemos considerar que la órbita de z = 0 diverge a infinito? La teoría de iteraciones nos asegura que la órbita divergirá a infinito si en algún momento uno de sus puntos tiene módulo mayor o igual a 2.
 
 A continuación veremos algunos ejemplos: 
 
@@ -247,6 +247,7 @@ A continuación veremos algunos ejemplos:
 ![Primer Fractal - Conjunto de Julia](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/julia%201.png)
 ##### Función
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(z)=z^{4}+c" />
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;c=(-0,5-0,5i)" />
 
 ##### Algoritmo de creación 
