@@ -26,6 +26,8 @@ Además es responsabilidad nuestra la elección de un buen test de parada, aunqu
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}" />
 
+Partiendo de este método, y dado que es capaz de aproximarse tanto a soluciones reales como a complejas, podríamos ingeniárnoslas para que dada una función se coloreasen de forma distinta las soluciones a las que el algoritmo va convergiendo. En pocas palabras: seleccionamos una región del plano complejo y vamos ejecutando el método de Newton, para una función <img src="https://latex.codecogs.com/svg.latex?\Large&space;f" /> dada, en un punto elegido de la región. Dependiendo de a qué solución converja el método pintamos ese punto de un color u otro.
+
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
 ##### Función
