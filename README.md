@@ -19,10 +19,12 @@ Algunos ejemplos de fractales son:
 
 ### Conjuntos de Newton
 El fractal de Newton es una curiosa creación basado en la aplicación del método de Newton para la resolución de sistemas de ecuaciones no lineales. El algoritmo es eficiente para encontrar aproximaciones de los ceros o raíces de una función real. También puede ser usado para encontrar el máximo o mínimo de una función, encontrando los ceros de su primera derivada.
+
 La idea de este método es la siguiente: se comienza con un valor razonablemente cercano al cero (denominado punto de arranque), entonces se reemplaza la función que estamos tratando por la recta tangente en ese valor, se iguala a cero y se despeja. Este cero será, generalmente, una aproximación mejor a la raíz de la función. Luego, se aplican tantas iteraciones como se deseen hasta que el método de una solución adecuada. Cabe destacar que es posible que el método diverja en determinadas circunstancias que pueden depender de la elección del punto inicial.
+
 Además es responsabilidad nuestra la elección de un buen test de parada, aunque dicho test podría basarse simplemente en el número de iteraciones realizadas.
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\center{x_{n+1}=x_{n}-\dfrac{f(x_{n})}{f'(x_{n})}}" />
 
 #### Primer Fractal
 ![Primer Fractal - Conjunto de Newton](https://raw.githubusercontent.com/mgarciag10/Galeria-Fractal/master/newton%201.png)
